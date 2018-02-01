@@ -1,12 +1,7 @@
 {
-  "name": "osman-resume",
-  "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/medjitov10/osman_resume",
   "scripts": {
-    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
-    "webpack": "webpack --watch",
-    "postinstall": "webpack"
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
   },
   "author": "",
   "license": "ISC",
