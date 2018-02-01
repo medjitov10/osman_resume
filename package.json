@@ -4,7 +4,9 @@
   "main": "index.js",
   "repository": "https://github.com/medjitov10/osman_resume",
   "scripts": {
-    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "webpack": "webpack --watch",
+    "postinstall": "webpack"
   },
   "author": "",
   "license": "ISC",
