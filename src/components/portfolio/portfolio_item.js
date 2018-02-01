@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PortfolioItemItem from './portfolio_item_item';
-// import $ from 'jquery';
+import $ from 'jquery';
 
 export default class PortfolioItem extends Component {
 
@@ -14,40 +14,42 @@ export default class PortfolioItem extends Component {
   }
 
 
-  // onDetailClick(e) {
-  //   const x = e.clientX - $('.portfolio-item').offset().left;
-  //   const y = e.clientY - $('.portfolio-item').offset().top + $(window).scrollTop();
-  //   const limitRight = $('.portfolio-item').width() - $('.portfolio-right').width();
-  //   const limitTop = $('.portfolio-item').height() - $('.small-img').height() - 20;
-  //
-  //   let detailX = null;
-  //   let detailY = null;
-  //   if ( this.state.flag ) {
-  //     this.setState({ flag: false });
-  //     detailY = -100;
-  //     detailX = -100;
-  //   } else {
-  //     detailY = $('.detail').offset().top + $(window).scrollTop() + $('.detail').height() -  $('.portfolio-item').offset().top;
-  //     detailX = $('.detail').offset().left + $('.detail').height() -$('.portfolio-item').offset().left;
-  //   }
-  //   if ( y < detailY-100 || y > detailY || x < detailX-100 || x < detailY ) {
-  //     if ( x > $('.portfolio-right').width() && x < limitRight && y < limitTop ) {
-  //       this.setState({
-  //         detail: {
-  //           position: 'absolute',
-  //           display: 'flex',
-  //           top: y,
-  //           left: x,
-  //           background: 'rgb(255, 255, 255)',
-  //           width: '200px',
-  //           height: '100px'
-  //         }
-  //       });
-  //     } else {
-  //       this.setState({ detail: { display: 'none' }});
-  //     }
-  //   }
-  // }
+  onDetailClick(e) {
+    const x = e.clientX - $('.portfolio-item').offset().left;
+    const y = e.clientY - $('.portfolio-item').offset().top + $(window).scrollTop();
+    const limitRight = $('.portfolio-item').width() - $('.portfolio-right').width();
+    const limitTop = $('.portfolio-item').height() - $('.small-img').height() - 20;
+
+    let detailX = null;
+    let detailY = null;
+    if ( this.state.flag ) {
+      this.setState({ flag: false });
+      detailY = -100;
+      detailX = -100;
+    } else {
+      detailY = $('.detail').offset().top +  $('.detail').height() -  $('.portfolio-item').offset().top;
+      detailX = $('.detail').offset().left + $('.detail').height() - $('.portfolio-item').offset().left;
+      console.log( $('.detail').offset().top + $('.detail').height() - $('.portfolio-item').offset().top);
+    }
+    if ( y < detailY-100 || y > detailY || x < detailX-100 || x < detailY ) {
+  
+      if ( x > $('.portfolio-right').width() && x < limitRight && y < limitTop ) {
+        this.setState({
+          detail: {
+            position: 'absolute',
+            display: 'flex',
+            top: y,
+            left: x,
+            background: 'rgb(255, 255, 255)',
+            width: '200px',
+            height: '100px'
+          }
+        });
+      } else {
+        this.setState({ detail: { display: 'none' }});
+      }
+    }
+  }
 
 
 

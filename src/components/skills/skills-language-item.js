@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import $ from 'jquery';
+import $ from 'jquery';
 
 export default class SkillsLanguageItem extends Component {
   constructor() {
@@ -24,18 +24,18 @@ export default class SkillsLanguageItem extends Component {
   }
 
   render() {
-    // const percent = $('.bar-main').width()/100;
-    // const { start } = this.state;
-    // const barProgress = {
-    //   borderRadius: '5px 0 0 5px',
-    //   height: '100%',
-    //   width: `${ start * percent }px`,
-    //   background: `${this.props.color}`
-    // };
-    //
-    // const percentStyle = {
-    //   left: `${start * percent - 15}`
-    // };
+    const percent = $('.bar-main').width()/100;
+    const { start } = this.state;
+    const barProgress = {
+      borderRadius: '5px 0 0 5px',
+      height: '100%',
+      width: `${ start * percent }px`,
+      background: `${this.props.color}`
+    };
+
+    const percentStyle = {
+      left: `${start * percent - 15}`
+    };
 
     return (
       <div className='skills-language-item' >
@@ -43,11 +43,11 @@ export default class SkillsLanguageItem extends Component {
           <div className='bar-name'>
             {this.props.name}
           </div>
-          {/* <div className='bar-main'>
+          <div className='bar-main'>
             <div className='bar-progress' style={barProgress}>
               <div style={percentStyle} className='bar-percent'><span>{start}%</span></div>
             </div>
-          </div> */}
+          </div>
         </div>
 
 

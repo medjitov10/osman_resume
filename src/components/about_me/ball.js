@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import $ from 'jquery';
+import $ from 'jquery';
 
 export default class Ball extends Component {
   constructor(props) {
@@ -24,12 +24,12 @@ export default class Ball extends Component {
 
   onImgOver(e) {
     if (this.state.flag) {
-      // let offset = $('#id').offset();
+      let offset = $('#id').offset();
 
       this.setState({
         flag: false,
-        // x: parseInt((e.clientX - offset.left )/($('#id').height()/100)),
-        // y: parseInt((e.clientY - offset.top )/($('#id').height()/100))
+        x: parseInt((e.clientX - offset.left )/($('#id').height()/100)),
+        y: parseInt((e.clientY - offset.top )/($('#id').height()/100))
       });
 
       this.step();

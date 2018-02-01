@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import GoogleMap from './google_map';
 import Form from './form';
 import axios from 'axios';
-// import $ from 'jquery';
+import $ from 'jquery';
 export default class Contacts extends Component {
   constructor() {
     super();
@@ -13,7 +13,7 @@ export default class Contacts extends Component {
       .then( data => {
         if ( data.status === 200 ) {
           this.setState({ messageSended: true });
-          // $("#form").fadeOut('fast', () => { $(".form-success").fadeIn('fast'); });
+          $("#form").fadeOut('fast', () => { $(".form-success").fadeIn('fast'); });
         }
       });
   }
@@ -44,7 +44,7 @@ export default class Contacts extends Component {
                 <i
                   className="fa fa-times fa-lg"
                   aria-hidden="true"
-                  // onClick={ () => $('.form-success').fadeOut('fast') }
+                  onClick={ () => $('.form-success').fadeOut('fast') }
                   ></i>
               </div>
             </div>
