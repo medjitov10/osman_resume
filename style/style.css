@@ -1,0 +1,135 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: URL('../../img/bg.jpg');
+}
+
+.no-margin {
+  margin: 0!important;
+  padding: 0!important;
+}
+@media screen and (max-width: 766px) {
+  .first-last-name {
+    text-align: center;
+    padding: 0!important;
+  }
+
+  .title-job {
+    text-align: center;
+    padding: 0!important;
+  }
+}
+.mainDiv {
+  width: 98%;
+  max-width: 1300px;
+  min-width: 294px;
+  padding: 0;
+  margin: 0 auto;
+  padding-top: 2%;
+}
+
+.NavBar {
+  width: 100%;
+
+  height: 33.33%;
+}
+
+.NavBarItem {
+  width: 20%;
+  height: 100%;
+  font-family: 'Playfair Display SC', serif;
+  font-size: 12px;
+  transition: 1s;
+}
+
+.NavBarItemMargin {
+  height: 100%;
+  padding: 29.5px 0px;
+}
+
+.NavBarUl {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  height: 100%;
+  box-sizing: border-box;
+}
+.about-me {
+}
+
+
+.NavBarOsman {
+  width: 100%;
+  height: 100%;
+
+}
+
+.osman-img{
+  width: 100%;
+  height: 300px;
+  background: url('../../img/osman2.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+
+
+.osman-title {
+  height: 100%
+}
+
+.first-last-name {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 33.33%;
+  height: 100px;
+  background: #696969;
+  padding-left: 30px;
+  box-sizing: border-box;
+}
+.linksName {
+  margin-right: 20px;
+  height: 100%;
+  align-items: center;
+  display: flex!important;
+}
+
+.linksName a {
+  color: white;
+  transition: .4s;
+
+}
+
+.linksName a:hover {
+  color: lightblue;
+  text-decoration: none;
+  transition: .4s;
+}
+.first-last-name h2 {
+  margin: 0;
+  font-family: 'Exo', sans-serif;
+  height: 100%;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+}
+
+.title-job {
+  height: 33.33%;
+  background: rgb(190, 193, 198);
+  padding-left: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  height: 100px;
+}
+
+.title-job div {
+  font-family: 'Cinzel', serif;
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+}

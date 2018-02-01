@@ -1,0 +1,187 @@
+.education {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 500px;
+  height: auto;
+  background: #daffe6;
+
+}
+
+.education-intro {
+
+  width: 80%;
+  margin: 0 auto;
+  min-height: 300px;
+  height: auto;
+  background: inherit;
+}
+
+
+.education-intro h3 {
+  text-align: center;
+  font-family: 'Exo', 'sans-serif';
+  font-weight: bold;
+  margin: 40px 0 28px 0;
+}
+
+.education-intro-quote {
+  color: grey;
+  font-size: 22px;
+  text-align: center;
+  font-family: 'Cinzel';
+  padding: 0;
+  margin: auto 0 0 0;
+}
+
+.education-intro-author {
+  color: #ef7979;
+  font-family: 'Ubuntu';
+  padding: 0;
+  margin: 5px 0 0 20px;
+}
+
+.education-intro-conclusion {
+  font-size: 27px;
+  margin-top: 20px;
+  text-align: center;
+  font-family: 'Dosis'
+}
+
+.education-timeline {
+  background: white;
+  width: 100%;
+  padding-top: 100px;
+  box-sizing: border-box;
+}
+
+.education-block {
+  width: 100%;
+  height: 700px;
+}
+.education-block:hover {
+  background: #f2fbff;
+}
+
+.education-block-half {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+}
+
+@media screen and (max-width: 900px) {
+  .education-block-half {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: 1s;
+  }
+  .time-pointer-left {
+    display: none;
+  }
+  .time-pointer-right {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .education-img {
+    border-radius: 30px 30px 0 0;
+    width: 100%!important;
+    margin: 0 auto;
+    height: 300px;
+    transition: 1s;
+  }
+
+  .education-info {
+    border: 1px solid #c8c8c8;
+    border-top: none;
+    margin: 0 auto;
+    width: 100%!important;
+    height: auto;
+    transition: 1s;
+  }
+
+}
+.education-info-block {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.education-img {
+  border-radius: 30px 30px 0 0;
+  width: 80%;
+  margin: 0 auto;
+  height: 300px;
+}
+
+.education-info {
+  border: 1px solid #c8c8c8;
+  border-top: none;
+  margin: 0 auto;
+  width: 80%;
+  height: auto;
+}
+
+
+.time-pointer-left {
+  position: relative;
+  background: url('../../../img/arrow.png') center center no-repeat;
+  background-size: 100%;
+  width: 50px;
+  height: 50px;
+  bottom: 1%;
+  left: 48%;
+  transform: rotateZ(225deg);
+  transition: 1s;
+}
+
+
+.time-pointer-right {
+  background: url('../../../img/arrow.png') center center no-repeat;
+  background-size: 100%;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  bottom: 0%;
+  left: 47.995%;
+  transition: 1s;
+}
+
+
+.education-info-name {
+  font-family: 'Abel', sans-serif;
+  text-align: center;
+  font-size: 25px;
+  color: #204d7a;
+}
+
+.education-info-data {
+  background: #303030;
+  width: 30%;
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 93%;
+  left: 70%;
+  transition: 1s;
+}
+
+
+.education-info-title {
+  font-family: 'Cinzel', serif;
+  padding-left: 20px;
+  font-weight: bold;
+  color: #204d7a;
+}
+
+.education-info-description {
+  padding: 15px 10px 10px 15px;
+  color: #000000;
+
+}

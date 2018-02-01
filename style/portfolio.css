@@ -1,0 +1,106 @@
+.portfolio {
+  height: 750px;
+  width: 100%;
+  background: #b0feb0;
+  border: 1px solid #b0feb0;
+}
+
+.portfolio-intro {
+  font-family: 'Slabo+35px';
+  text-align: center;
+  margin-top: 40px;
+}
+.portfolio-item {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 80%;
+  height: 60%;
+  margin: 0 auto;
+  top: 10%;
+}
+
+.portfolio-left {
+  position: absolute;
+  width: 7%;
+  height: 100%;
+}
+.portfolio-left:hover {
+  background: rgba(237, 238, 239, 0.2);
+}
+
+.portfolio-left i {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+}
+
+.portfolio-right {
+  position: absolute;
+  width: 7%;
+  right: 0%;
+  top: 0%;
+  height: 100%;
+}
+
+.portfolio-right:hover {
+  background: rgba(237, 238, 239, 0.2);
+}
+
+
+.portfolio-right i {
+  position: absolute;
+  top: 50%;
+  right: 40%;
+}
+
+.small-img {
+  display: flex;
+  width: 100%;
+  height: 20%;
+  position: absolute;
+  bottom: 10px;
+
+}
+
+.small-img-item {
+  width: 20%;
+  height: 100%;
+  border: 1px solid rgba(187, 188, 191, 0.5);
+  margin-left: 10px;
+  background-position: center;
+  background-size: cover;
+}
+
+.detail-item {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.detail {
+  display: none;
+}
+
+.detail-item-git a {
+  background: url('../img/git.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70%;
+  width: 100%;
+
+}
+
+.detail-item-live a {
+  background: url('../img/live.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 75%;
+  width: 100%;
+
+}
