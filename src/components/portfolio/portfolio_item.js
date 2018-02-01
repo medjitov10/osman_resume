@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PortfolioItemItem from './portfolio_item_item';
-import $ from 'jQuery';
+import $ from 'jquery';
 
 export default class PortfolioItem extends Component {
 
