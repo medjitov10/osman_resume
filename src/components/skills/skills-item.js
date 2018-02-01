@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-// import {Area, CirclePie, BarMetric} from 'react-simple-charts';
+import {Area, CirclePie, BarMetric} from 'react-simple-charts';
 
 class SkillsItem extends Component {
   constructor() {
@@ -31,7 +31,7 @@ class SkillsItem extends Component {
       <div className='skills-item'>
         <h4>{name}</h4>
         <div>
-          {/* <CirclePie
+          <CirclePie
             percent={this.state.start}
             width={200}
             strokeColor={color}
@@ -39,7 +39,7 @@ class SkillsItem extends Component {
             labelFontSize='16'
             border= 'none'
             padding= {10}
-          /> */}
+          />
 
         </div>
       </div>
