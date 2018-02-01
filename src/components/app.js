@@ -22,6 +22,7 @@ export default class App extends Component {
           </div>
         <div className='row no-margin'>
           <div className='col-12  no-margin'>
+            {/* <CurrentItem /> */}
           </div>
 
         </div>
