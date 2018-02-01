@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import $ from 'jquery';
+import $ from 'jQuery';
 
 export default class Ball extends Component {
   constructor(props) {

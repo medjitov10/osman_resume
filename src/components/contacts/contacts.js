@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import GoogleMap from './google_map';
 import Form from './form';
 import axios from 'axios';
-import $ from 'jquery';
+import $ from 'jQuery';
 export default class Contacts extends Component {
   constructor() {
     super();

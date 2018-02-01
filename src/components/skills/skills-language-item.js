@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import $ from 'jquery';
+import $ from 'jQuery';
 
 export default class SkillsLanguageItem extends Component {
   constructor() {
