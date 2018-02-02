@@ -30,6 +30,7 @@
     "babel-preset-stage-1": "^6.1.18",
     "google-maps-react": "^1.1.2",
     "lodash": "^3.10.1",
+    "moment": "^2.14.1",
     "object-assign": "^4.1.1",
     "object.omit": "^3.0.0",
     "prop-types": "^15.6.0",
