@@ -84,6 +84,15 @@ export default class TitleJob extends Component {
           {this.state.title}
           <span style={this.state.spanStyle}>|</span>
         </div>
+        <div style={{float: 'right', width: '20%', height: '100%'}}>
+          <span>
+            <a href="../../resume.pdf" target='_blank'
+              style={{color: '#212529', marginLeft: '27px'}}>
+              Resume<i className="fa fa-file-pdf-o fa-lg" aria-hidden="true"></i>
+            </a>
+          </span>
+
+        </div>
       </div>
     );
   }
