@@ -29,10 +29,9 @@ export default class PortfolioItem extends Component {
     } else {
       detailY = $('.detail').offset().top +  $('.detail').height() -  $('.portfolio-item').offset().top;
       detailX = $('.detail').offset().left + $('.detail').height() - $('.portfolio-item').offset().left;
-      console.log( $('.detail').offset().top + $('.detail').height() - $('.portfolio-item').offset().top);
     }
     if ( y < detailY-100 || y > detailY || x < detailX-100 || x < detailY ) {
-  
+
       if ( x > $('.portfolio-right').width() && x < limitRight && y < limitTop ) {
         this.setState({
           detail: {
