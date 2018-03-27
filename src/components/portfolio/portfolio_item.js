@@ -53,15 +53,15 @@ export default class PortfolioItem extends Component {
 
 
   render() {
-    const { currentObj, onButtonClick, Objs } = this.props;
+    const { currentObj, onLeftClick, Objs, onRightClick, onIconClick } = this.props;
 
     return (
       <div onClick={ this.onDetailClick.bind(this) } className='portfolio-item' style={{
         backgroundImage: `url('${currentObj.img}')`}}>
-        <div onClick={ onButtonClick} className='portfolio-left'>
+        <div onClick={ onLeftClick} className='portfolio-left'>
           <i className="fa fa-chevron-circle-left fa-lg" aria-hidden="true"></i>
         </div>
-        <div onClick={ onButtonClick}  className='portfolio-right'>
+        <div onClick={ onRightClick}  className='portfolio-right'>
           <i className="fa fa-chevron-circle-right fa-lg" aria-hidden="true"></i>
         </div>
 
@@ -79,7 +79,7 @@ export default class PortfolioItem extends Component {
           </div>
         </div>
 
-        <PortfolioItemItem Objs={Objs} currentObj={currentObj} onImgClick={onButtonClick} />
+        <PortfolioItemItem Objs={Objs} currentObj={currentObj} onImgClick={onIconClick} />
       </div>
     );
   }

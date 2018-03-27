@@ -35,6 +35,12 @@ const FirstLastName = () => {
 
         </div>
 
+        <div className='linksName'>
+            <a href="../../resume.pdf" target='_blank'>
+              <i className="fa fa-file-pdf-o fa-lg" aria-hidden="true"></i>
+            </a>
+        </div>
+
       </div>
 
     </div>
