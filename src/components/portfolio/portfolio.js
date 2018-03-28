@@ -10,18 +10,18 @@ class Portfolio extends Component {
       obj: [
         {
           img: '../../../img/to_do_list.png',
-          arrGit: 'https://github.com/medjitov10/to_list_2000/',
-          live: 'https://to-do-list-2000.herokuapp.com/'
+          git: 'https://github.com/medjitov10/to_list_2000/',
+          url: 'https://to-do-list-2000.herokuapp.com/'
         },
         {
           img: '../../../img/osmagramm.png',
-          arrGit: 'https://github.com/medjitov10/osmagramm',
-          live: 'https://osmagramm.herokuapp.com/'
+          git: 'https://github.com/medjitov10/osmagramm',
+          url: 'https://osmagramm.herokuapp.com/'
         },
         {
           img: '../../../img/cotd.png',
-          arrGit: 'https://github.com/medjitov10/catch-of-the-day/',
-          live: 'https://ns-wceoyfuumi.now.sh/'
+          git: 'https://github.com/medjitov10/catch-of-the-day/',
+          url: 'https://ns-wceoyfuumi.now.sh/'
         }
       ],
 

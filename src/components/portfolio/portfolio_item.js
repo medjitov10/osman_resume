@@ -54,7 +54,6 @@ export default class PortfolioItem extends Component {
 
   render() {
     const { currentObj, onLeftClick, Objs, onRightClick, onIconClick } = this.props;
-
     return (
       <div onClick={ this.onDetailClick.bind(this) } className='portfolio-item' style={{
         backgroundImage: `url('${currentObj.img}')`}}>
